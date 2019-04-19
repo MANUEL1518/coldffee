@@ -8,7 +8,7 @@
 		$query = mysqli_query($conexion, "SELECT * FROM users WHERE email = '".$email."';");
 		if (mysqli_num_rows($query) > 0) {
 			while ($row = mysqli_fetch_array($query)) {
-				if ($row['password'] == $password) {
+				if (password_verify($password, $row['password'])){
 					echo "Bienvenido";
 				}else{
 					echo "Contraseña invalida :P";

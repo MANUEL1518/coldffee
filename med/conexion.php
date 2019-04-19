@@ -21,7 +21,8 @@
 	//insertar datos
 	$conexion = mysqli_connect($host, $user, $pass, $db);
 	if ($conexion) {
-		$query = mysqli_query($conexion, "INSERT INTO no_verify(id_alfanum, username, email, password) VALUES('".$code."','".$username."','".$email."','".$pass_1."');");
+		$password_cifrado = password_hash($pass_1, PASSWORD_DEFAULT);
+		$query = mysqli_query($conexion, "INSERT INTO no_verify(id_alfanum, username, email, password) VALUES('".$code."','".$username."','".$email."','".$password_cifrado."');");
 
 		////////////////////////////////////////////
 		//                                        //

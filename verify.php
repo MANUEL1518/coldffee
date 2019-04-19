@@ -36,7 +36,24 @@
 			$borrar2 = mysqli_query($conexion, "DELETE FROM no_verify WHERE email='".$email."';");
 
 			if ($insertar_nuevo_usuario && $borrar1 || $borrar2) {
-				echo "Tu usuario a sido verificado excitosamente<br><a href='index.php'>Volver</a>";
+			?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Coldffee Drive - Verify</title>
+	<link rel="stylesheet" type="text/css" href="med/style.css">
+	<link rel="icon" type="image/png" href="med/coffee.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu|Pacifico|Varela+Round" rel="stylesheet">
+</head>
+<body>
+	Tu usuario a sido verificado excitosamente
+	<br><a href='index.php'>Volver</a>";
+</body>
+</html>
+			
+<?php
 			}
 
 		}else{
