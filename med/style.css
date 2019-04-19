@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://media.istockphoto.com/vectors/seamless-lettering-coffee-pattern-with-quotes-hand-drawn-vector-vector-id836477702?k=6&m=836477702&s=612x612&w=0&h=N81ezRXWMuVlCN5KoZbbi0YhA4rqUStb9jKYlgQ7AAM=);
+  background-size: 500px;
+  font-family: Roboto, sans-serif;
+}
+
+#cont {
+  position: absolute;
+  background: rgba(0,0,0,0.2);
+  padding: 30px 0px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+#cont #title {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  text-shadow: 5px 5px 0px #512e12;
+  font-family: Pacifico;
+}
+#cont #title h1 #coffee {
+  transform: rotate(-16deg);
+}
+#cont #title h1 #coffee:nth-child(2) {
+  transform: rotate(16deg);
+}
+
+input {
+  outline: none;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  padding: 10px 0px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  color: #3d2310;
+  font-size: 17px;
+  border-bottom: 3px #513018 solid;
+  font-family: Varela Round, sans-serif;
+  box-sizing: border-box;
+}
+input[type=submit], button {
+  transition: 0.2s;
+  width: 100%;
+  padding: 10px;
+  background: #512e12;
+  font-size: 15px;
+  font-family: Varela Round, sans-serif;
+  border: none;
+  color: #fcdb92;
+  box-shadow: 0px 5px 0px #2d1a0a;
+}
+input[type=submit]:hover, button:hover{
+  transition: 0.2s;
+  box-shadow: 0px 0px 0px #2d1a0a;
+  transform: translateY(5px);
+}
+a button{
+	color: #fcdb92;
+	text-decoration: none;
+}
+
+#main {
+  border-top: 5px #512e12 solid;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f1e9d4;
+  box-shadow: 0px 0px 20px #000;
+}
+#main h1 {
+  font-family: Varela Round, sans-serif;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  padding: 0px 0px 20px 0px;
+  font-size: 34px;
+  color: #512e12;
+}
+
+#label_p {
+  padding: 20px 0px 0px 0px;
+  color: #512e12;
+  font-family: Varela Round, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+#label_p:nth-child(2) {
+  padding: 0px;
+}
+
+a {
+  color: #512e12;
+}
+a:hover {
+  color: #000;
+}
+
+.error{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 12px;
+  background: #632414;
+  border-top: 3px #280d06 solid;
+  color: #fff;
+  margin: 10px auto;
+}
