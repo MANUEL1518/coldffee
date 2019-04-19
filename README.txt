@@ -3,18 +3,7 @@ API de login y verificacion multimedia por el uso de mensajes a correos
 electronicos.
 
 Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
-
-                   #######    #######
-                 ###     ##  ##     ###
-                 ##        ##        ##
-                 ##                  ##
-                 ###    R0cK_Y0u    ###
-                  ###              ###
-                   ###           ###
-                     ###       ###
-                       ###   ###
-                         ## ##
-                          ###
+//////////////////////////////////////////////////////
 
 
          ######  #     # ######        #  #####  
@@ -23,4 +12,7 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
          ######  ####### ######     #     #####  
          #       #     # #           #         # 
          #       #     # #            #  #     # 
-         #       #     # #             #  #####  
+         #       #     # #             #  #####
+
+
+//////////////////////////////////////////////////////
