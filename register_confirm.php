@@ -12,11 +12,16 @@
 	///////////////////////////////////////
 session_start();
 	$username = $_POST['username'];
-	$var = ""; 
-
 	$email = $_POST['email'];
 	$pass_1 = $_POST['pass'];
 	$pass_2 = $_POST['pass_1'];
+
+	$_SESSION['username'] = $_POST['username'];
+	$_SESSION['email'] = $_POST['email'];
+	$_SESSION['pass'] = $_POST['pass'];
+	$_SESSION['pass_1'] = $_POST['pass_1'];
+
+	$var = "";
 
 	//condicionales de aceptación
 

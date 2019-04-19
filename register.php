@@ -39,6 +39,20 @@
 			';
 		}
 	}
+	function value_e($num){
+		if ($num == 1) {
+			print $_SESSION['username'];
+		}
+		if ($num == 2) {
+			print $_SESSION['email'];
+		}
+		if ($num == 3) {
+			print $_SESSION['pass'];
+		}
+		if ($num == 4) {
+			print $_SESSION['pass_1'];
+		}
+	}
 ?>
 
 <!DOCTYPE html>
@@ -62,28 +76,28 @@
 					<label for="user">
 						<p id="label_p">Full Name : </p>
 						<?php ver(1);?>
-						<input id="user" type="text" name="username" autofocus autocomplete="off" required title="Username">
+						<input id="user" value="<?php value_e(1);?>" type="text" name="username" autofocus autocomplete="off" required title="Username">
 					</label>
 				</p>
 				<p>
 					<label for="email">
 						<p id="label_p">Email : </p>
 						<?php ver(2);?>
-						<input id="email" type="text" name="email" autocomplete="off" required title="Email">
+						<input id="email" value="<?php value_e(2);?>" type="text" name="email" autocomplete="off" required title="Email">
 					</label>
 				</p>
 				<p>
 					<label for="pass">
 						<p id="label_p">Password : </p>
 						<?php ver(3);?>
-						<input id="pass" type="password" name="pass" required title="Password">
+						<input id="pass" value="<?php value_e(3);?>" type="password" name="pass" required title="Password">
 					</label>
 				</p>
 				<p>
 					<label for="pass_1">
 						<p id="label_p">Confirm Password : </p>
 						<?php ver(4);?>
-						<input id="pass_1" type="password" name="pass_1" required title="Password">
+						<input id="pass_1" value="<?php value_e(4);?>" type="password" name="pass_1" required title="Password">
 					</label>
 				</p><br>
 				<p>
