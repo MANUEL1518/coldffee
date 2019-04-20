@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '0');
 	///////////////////////////////////////
 	// Soy usado para verificar correo e //
     ///////////////////////////////////////
@@ -76,7 +77,7 @@
 	</center>
 </section>
 </div>
-			<?
+			<?php
 		}
 	}
 ?>

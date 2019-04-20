@@ -1,4 +1,5 @@
-<?php 
+<?php
+ini_set('display_errors', '0');
 	include("med/datos_serv.php");
 	$email = $_POST['email'];
 	$password = $_POST['pass'];

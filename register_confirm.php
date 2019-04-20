@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', '0');
 	///////////////////////////////////////
 	// Soy usado para confirmar register //
     ///////////////////////////////////////
@@ -69,6 +70,7 @@ if (strlen($var) > 0) {
 }else{
 	//si no hay ningun error
 	session_destroy();
+	session_start();
 	//usar conexion.php para registrar datos correctos en base de datos
 	include("med/conexion.php");
 

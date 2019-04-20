@@ -1,6 +1,9 @@
-<?
+<?php
+session_cache_limiter(FALSE);
+ini_set('display_errors', '0');
+session_start();
 	function ver($div){
-		session_start();
+
 		$error_name  = $_SESSION["error_name"];
 		$error_email = $_SESSION["error_email"];
 		$error_plen  = $_SESSION["error_plen"];

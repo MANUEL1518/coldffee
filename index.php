@@ -1,10 +1,13 @@
-<?
+<?php
+ini_set('display_errors', '0');
+session_cache_limiter(FALSE); 
+ob_start(); session_start();
 session_start();
 	$_SESSION["error_name"] = "none";
 	$_SESSION["error_email"] = "none";
 	$_SESSION["error_plen"] = "none";
 	$_SESSION["error_p"] = "none";
-	$_SESSION["error"] == "none";
+	$_SESSION["error"] = "none";
 ?>
 
 <!DOCTYPE html>

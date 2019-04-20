@@ -17,6 +17,7 @@
 	for($i=0; $i < 10; $i++){
 	    $code .= $alpha[rand(0, strlen($alpha)-1)];
 	}
+	list($firts_name) = explode(" ", $username);
 
 	//insertar datos
 $conexion = mysqli_connect($host, $user, $pass, $db);
@@ -40,7 +41,7 @@ if ($se_repite > 0) {
 		////////////////////////////////////////////
 		if ($query) {
 			//pagina a la cual se dirigira
-			$pagina = "http://coldffee.webcindario.com/verify.php?id_alfa=".$code;
+			$pagina = "http://coldffee.000webhostapp.com/verify.php?id_alfa=".$code;
 
 			//Remitente
 			$from = "manuelguapote515@gmail.com";
@@ -108,7 +109,7 @@ if ($se_repite > 0) {
 		                        <img width="30px" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/whatsapp/116/party-popper_1f389.png" \>
 		                    </h1>
 		                    <p>
-		                        <b>Hola '.$firts_name.'!!!</b>. Te damos la bienvenida a <b>Coldffee</b><br>
+		                        <b>Hola '.$firts_name.' !!!</b>. Te damos la bienvenida a <b>Coldffee</b><br>
 		                        somos una empresa dedica al almacenamiento y proteccion<br>
 		                        de tus archivos. Ya pudimos registrar tus datos. solo<br>
 		                        quedaria confirmar. Tenemos una nube personalizada justo para ti.<br>

@@ -3,6 +3,27 @@ API de login y verificacion multimedia por el uso de mensajes a correos
 electronicos.
 
 Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
+
+ _____       _        _ _     _       
+|_   _|___ _| |___   | |_|___| |_ ___ 
+  | | | . | . | . |  | | |_ -|  _| . |
+  |_| |___|___|___|  |_|_|___|_| |___|
+                                      
+                             _   _            _    _____             
+  ___ ___ ___ ___    ___ _ _| |_|_|___    ___| |  |   __|___ ___ _ _ 
+ | . | .'|  _| .'|  |_ -| | | . | |  _|  | .'| |  |__   | -_|  _| | |
+ |  _|__,|_| |__,|  |___|___|___|_|_|    |__,|_|  |_____|___|_|  \_/ 
+ |_|                                                                 
+
+********************************************
+
+	Aqui esta la url para los curiosos :P
+
+	 http://coldffee.000webhostapp.com
+
+
+********************************************
+
 //////////////////////////////////////////////////////
 
 
@@ -16,3 +37,12 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
 
 
 //////////////////////////////////////////////////////
+
+---------------######## P_S_ D #########---------------
+
+ -	El codigo tenia algunos errores que el servidor
+ 	detecto pero el localhost no. asi que corregi 
+ 	todos los errores y ahora esta listo para subirse
+ 	a intenets.
+
+ -----------------------------------------------------
