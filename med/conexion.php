@@ -19,8 +19,17 @@
 	}
 
 	//insertar datos
-	$conexion = mysqli_connect($host, $user, $pass, $db);
-	if ($conexion) {
+$conexion = mysqli_connect($host, $user, $pass, $db);
+if ($conexion) {
+	//se verifica si el usuario exciste
+	$verify = mysqli_query($conexion, "select email from users WHERE email = '".$email."';");
+	$se_repite = mysqli_num_rows($verify);
+//condicional
+if ($se_repite > 0) {
+	$key = "close";
+}else{
+	$key = "open";
+		//insertar los datos del usuario en *no verificado*
 		$password_cifrado = password_hash($pass_1, PASSWORD_DEFAULT);
 		$query = mysqli_query($conexion, "INSERT INTO no_verify(id_alfanum, username, email, password) VALUES('".$code."','".$username."','".$email."','".$password_cifrado."');");
 
@@ -136,6 +145,7 @@
 		}else{
 			echo "No se pudo realizar peticion"; //No realiza Query
 		}
+}//cierro condicional "si se repite correo electronico"
 	}else{
 		echo "problema al conectar base"; //No se puede conectar
 	}

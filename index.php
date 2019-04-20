@@ -1,9 +1,10 @@
 <?
 session_start();
-	$_SESSION["error_name"] = "";
-	$_SESSION['error_email'] = "";
-	$_SESSION['error_plen'] = "";
-	$_SESSION['error_p'] = "";
+	$_SESSION["error_name"] = "none";
+	$_SESSION["error_email"] = "none";
+	$_SESSION["error_plen"] = "none";
+	$_SESSION["error_p"] = "none";
+	$_SESSION["error"] == "none";
 ?>
 
 <!DOCTYPE html>
@@ -16,10 +17,10 @@ session_start();
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu|Pacifico|Varela+Round" rel="stylesheet">
 </head>
 <body>
-	<div id="cont" style="height: 100%;">
+	<div id="cont" style="height: 100%; display: block; padding: 3% 0px; box-sizing: border-box;">
 		<div id="title">
 			<center><h1><img id="coffee" width="90px" src="med/coffee1.png"> Coldffee Drive <img id="coffee" width="90px" src="med/coffee1.png"></h1></center>
-		</div>
+		</div><br><br>
 		<section id="main">
 			<h1>Login</h1>
 			<form action="validar.php" method="post">
@@ -42,7 +43,7 @@ session_start();
 					<center>or you can <a href="register.php">register</a></center>
 				</p>
 			</form>
-		</section><br><br><br><br><br>
+		</section><br><br><br><br>
 	</div>
 </body>
 </html>

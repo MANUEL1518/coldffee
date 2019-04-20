@@ -2,9 +2,9 @@
 	function ver($div){
 		session_start();
 		$error_name  = $_SESSION["error_name"];
-		$error_email = $_SESSION['error_email'];
-		$error_plen  = $_SESSION['error_plen'];
-		$error_p     = $_SESSION['error_p'];
+		$error_email = $_SESSION["error_email"];
+		$error_plen  = $_SESSION["error_plen"];
+		$error_p     = $_SESSION["error_p"];
 
 		//si el nombre es muy corto
 		if ($div == 1 && $error_name == "error") {
@@ -53,6 +53,16 @@
 			print $_SESSION['pass_1'];
 		}
 	}
+
+	function error(){
+		if ($_SESSION["error"] == "true") {
+			print '
+				<div class="error">
+					Este correo ya se esta usando
+				</div>
+			';
+		}
+	}
 ?>
 
 <!DOCTYPE html>
@@ -65,10 +75,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu|Pacifico|Varela+Round" rel="stylesheet">
 </head>
 <body>
-	<div id="cont">
+	<div id="cont" style="height: 100%; display: block; padding: 3% 0px 54% 0px; box-sizing: border-box;">
 		<div id="title">
 			<center><h1><img id="coffee" width="90px" src="med/coffee1.png"> Coldffee Drive <img id="coffee" width="90px" src="med/coffee1.png"></h1></center>
-		</div>
+		</div><br><br>
 		<section id="main">
 			<h1>Register</h1>
 			<form action="register_confirm.php" method="post" id="form">
@@ -82,6 +92,7 @@
 				<p>
 					<label for="email">
 						<p id="label_p">Email : </p>
+						<?php error(); ?>
 						<?php ver(2);?>
 						<input id="email" value="<?php value_e(2);?>" type="text" name="email" autocomplete="off" required title="Email">
 					</label>
