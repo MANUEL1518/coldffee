@@ -33,9 +33,9 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
 
 ***************************************************************
 
-            Aqui esta la url para los curiosos :P
-        ❤                                           ❤
-              http://coldffee.000webhostapp.com
+             Aqui esta la url para los curiosos :P
+         ❤                                         ❤
+               http://coldffee.000webhostapp.com
 
 ***************************************************************
 
