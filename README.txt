@@ -57,4 +57,4 @@ no. asi que corregi los errores. ahora esta listo para subirse a internet
 
 -------------------------------------------------------------------------
 
-                           BY: Manuel Ponce
+                              Manuel Ponce
