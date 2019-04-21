@@ -13,15 +13,16 @@
  
 /##########################################################################
 \_________________________________________________________________________/
+
+
 Este nuevo proyecto es para poder entender un poco mejor como funciona una 
 API de login y verificacion multimedia por el uso de mensajes a correos
 electronicos.                                                             
 
 Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
-                                                             
- _____       _        _ _     _                              
-|_   _|___ _| |___   | |_|___| |_ ___                        
-  | | | . | . | . |  | | |_ -|  _| . |   
+ _____       _        _ _     _       
+|_   _|___ _| |___   | |_|___| |_ ___ 
+  | | | . | . | . |  | | |_ -|  _| . |  
   |_| |___|___|___|  |_|_|___|_| |___|
                                       
                              _   _            _    _____             
@@ -30,14 +31,13 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
  |  _|__,|_| |__,|  |___|___|___|_|_|    |__,|_|  |_____|___|_|  \_/ 
  |_|                                                                 
 
-******************************************************
+*******************************************************
 
         Aqui esta la url para los curiosos :P
     ❤                                           ❤
-          http://coldffee.000webhostapp.com
+         http://coldffee.000webhostapp.com
 
-
-******************************************************
+*******************************************************
 
 ///////////////////////////////////////////////////////////////
 
@@ -50,7 +50,7 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
 
 //////////////////////////////////////////////////////////////
 
-------------------###### 👊 ATENTION 👊 #######------------------
+------------------###### ! ATENTION ! #######------------------
 
  -	El codigo tenia algunos errores que el servidor
  	detecto pero el localhost no. asi que corregi 
@@ -59,4 +59,4 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
 
  --------------------------------------------------------------
 
-                       BY: Manuel Ponce
+                      BY: Manuel Ponce
