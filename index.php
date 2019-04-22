@@ -8,6 +8,42 @@ session_start();
 	$_SESSION["error_plen"] = "none";
 	$_SESSION["error_p"] = "none";
 	$_SESSION["error"] = "none";
+	$_SESSION['username'] = "";
+	$_SESSION['email'] = "";
+	$_SESSION['pass'] = "";
+	$_SESSION['pass_1'] = "";
+
+function pop_up(){
+	if ($_SESSION['email_o_password_incorrecto'] == "true") {
+		print '
+			<script>
+				window.onload = function(){
+					var audio = new Audio("med/pop_close.mp3");
+					audio.play();
+				}
+			</script>
+			<div id="div_pop_up">
+				<p id="btn_pop_down_up" onClick = "cerrar_pop_up();">✖</p>
+				<p>Email o contraseña incorrecto</p>
+			</div>
+		';
+	}
+	if ($_SESSION['password_incorrecto'] == "true") {
+		print '
+			<script>
+				window.onload = function(){
+					var audio = new Audio("med/pop_close.mp3");
+					audio.play();
+				}
+			</script>
+			<div id="div_pop_up">
+				<p id="btn_pop_down_up" onClick = "cerrar_pop_up();">✖</p>
+				<p>Contraseña incorrecta</p>
+			</div>
+		';
+	}
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -18,8 +54,17 @@ session_start();
 	<link rel="stylesheet" type="text/css" href="med/style.css">
 	<link rel="icon" type="image/png" href="med/coffee.png">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu|Pacifico|Varela+Round" rel="stylesheet">
+	<script type="text/javascript">
+		function cerrar_pop_up(){
+			document.getElementById('div_pop_up').style.transition = "0.5s";
+			document.getElementById('div_pop_up').style.transform = "scale(0)";
+			var audio1 = new Audio("med/pop.mp3");
+			audio1.play();
+		}
+	</script>
 </head>
 <body>
+<?php pop_up(); ?>
 	<div id="cont" style="height: 100%; display: block; padding: 3% 0px; box-sizing: border-box;">
 		<div id="title">
 			<center><h1><img id="coffee" width="90px" src="med/coffee1.png"> Coldffee Drive <img id="coffee" width="90px" src="med/coffee1.png"></h1></center>
@@ -43,10 +88,16 @@ session_start();
 					<input type="submit" value="Enter">
 				</p><br>
 				<p id="register">
-					<center>or you can <a href="register.php">register</a></center>
-				</p>
+					<center style="font-size: 14px;">
+						or you can <a href="register.php">register</a> or 
+						<a href="recover.php">forgotten password?</a>
+					</center>
 			</form>
 		</section><br><br><br><br>
 	</div>
 </body>
 </html>
+<?php
+$_SESSION['email_o_password_incorrecto'] = "";
+$_SESSION['password_incorrecto'] = "";
+?>

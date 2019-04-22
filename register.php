@@ -118,7 +118,7 @@ session_start();
 					<input type="submit" value="Register">
 				</p><br>
 				<p id="register">
-					<center>Do have account? <a href="index.php">Login</a></center>
+					<center style="font-size: 14px;">Do have account? <a href="index.php">Login</a></center>
 				</p>
 			</form>
 		</section><br><br>

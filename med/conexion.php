@@ -76,7 +76,7 @@ if ($se_repite > 0) {
 		                .ever{
 		                    padding: 20px 0px;
 		                    box-sizing: border-box;
-		                    background: rgba(0,0,0,0.8);
+		                    background: rgba(0,0,0,0.5);
 		                    width: 100%;
 		                    height: 100%;
 		                }

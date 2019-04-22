@@ -1,0 +1,1 @@
+<?php echo "Aqui recuperaremos tu contraseña"; ?>
