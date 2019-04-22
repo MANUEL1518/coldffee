@@ -31,7 +31,7 @@ Estuve aucente por algunos dias pero hoy vengo con todo!!! :3
 **************************************************************************
 
                   Aqui esta la url para los curiosos :P
-              ❤                                         ❤
+              ❤                                           ❤
                     http://coldffee.000webhostapp.com
 
 **************************************************************************
@@ -54,7 +54,10 @@ no. asi que corregi los errores. ahora esta listo para subirse a internet
 
 -------------------------------------------------------------------------
 
-                             Manuel Ponce
+                                       _       _     _  
+                   |\/|  /\  |\ | | | |_ | /| |_ /| (_) 
+                   |  | /--\ | \| |_| |_ |_ |  _) | (_) 
+
 
 -------------------------------------------------------------------------
 
@@ -69,5 +72,4 @@ no. asi que corregi los errores. ahora esta listo para subirse a internet
                      |______|.'  ;   \__________/      
                         `._      `;                    
                            `-._.''                     
-
 

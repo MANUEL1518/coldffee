@@ -18,6 +18,7 @@ session_start();
 	<header>
 		<span><h2>Coldffee Drive</h2></span>
 		<span><img src="med/user_icon.png"></span>
+		<span><a href="session_close.php">Cerrar Sesion</a></span>
 	</header>
 	<div id="main">
 		<h1>Archivos y ficheros</h1>
