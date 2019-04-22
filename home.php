@@ -1,6 +1,7 @@
 <?php
 session_start();
-	if (isset($_SESSION['id_user']) && isset($_SESSION['username']) && isset($_SESSION['email'])){
+	//ver si las variables de sesion estan vacias
+	if (empty($_SESSION['id_user']) && empty($_SESSION['username']) && empty($_SESSION['email'])){
 		$id_user = $_SESSION['id_user'];
 		$username = $_SESSION['username'];
 		$email = $_SESSION['email'];
@@ -18,7 +19,7 @@ session_start();
 	<header>
 		<span><h2>Coldffee Drive</h2></span>
 		<span><img src="med/user_icon.png"></span>
-		<span><a href="session_close.php">Cerrar Sesion</a></span>
+		<span><a href="session_close.php" style="color: #fff;">Cerrar Sesion</a></span>
 	</header>
 	<div id="main">
 		<h1>Archivos y ficheros</h1>
