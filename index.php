@@ -1,14 +1,16 @@
 <?php
-ini_set('display_errors', '0');
-session_cache_limiter(FALSE); 
-ob_start(); session_start();
+session_cache_limiter(FALSE);
 session_start();
+ini_set('display_errors', '0');
+//si ya hay una sesion valida iniciada
+if (strlen($_SESSION['username']) == 0) {
 	$_SESSION["error_name"] = "none";
 	$_SESSION["error_email"] = "none";
 	$_SESSION["error_plen"] = "none";
 	$_SESSION["error_p"] = "none";
 	$_SESSION["error"] = "none";
 	$_SESSION['username'] = "";
+	$_SESSION['id_user'] = "";
 	$_SESSION['email'] = "";
 	$_SESSION['pass'] = "";
 	$_SESSION['pass_1'] = "";
@@ -93,11 +95,14 @@ function pop_up(){
 						<a href="recover.php">forgotten password?</a>
 					</center>
 			</form>
-		</section><br><br><br><br>
+		</section>
 	</div>
 </body>
 </html>
 <?php
 $_SESSION['email_o_password_incorrecto'] = "";
 $_SESSION['password_incorrecto'] = "";
+}else{
+	header("location: home.php");
+}
 ?>

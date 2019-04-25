@@ -12,13 +12,12 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 			while ($row = mysqli_fetch_array($query)) {
 				if (password_verify($password, $row['password'])){
 
-					############################################
-								//Advertencia!!!
+					//############################################
+					//Advertencia!!!
 					//	Recuerda que uno de los pasos para iniciar el home
 					//	es recogiendo "username", "email", "fecha_ini" y ya
 					// no hace fata que conozca la contraseña. gogogo...
-
-					############################################
+					//############################################
 					echo "Bienvenido";
 					session_destroy(); //cierro todas las sessions activas
 					session_start(); //creamos una nueva session limpia
@@ -26,12 +25,14 @@ if (isset($_POST['email']) && isset($_POST['pass'])) {
 					while($row = mysqli_fetch_array($query)){
 						$username = $row['username'];
 						$id = $row['id'];
+						$date_user = $row['start_date'];
 					}
 
 					//recuperamos variables a enviar
 					$_SESSION['email'] = $email;
 					$_SESSION['username'] = $username;
 					$_SESSION['id_user'] = $id;
+					$_SESSION['date_user'] = $date_user;
 					//mano a home
 					header("location: home.php");
 				}else{
