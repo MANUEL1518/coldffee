@@ -16,3 +16,11 @@ CREATE TABLE `users` (
   `password` varchar(255) DEFAULT NULL,
   `start_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `files` (
+  `id_filex` varchar(20),
+  `id_user` varvchar(10),
+  `filename` varchar(255),
+  `ext` varchar(10),
+  `date_uploaded` TIMESTAMP DEFAULT CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
