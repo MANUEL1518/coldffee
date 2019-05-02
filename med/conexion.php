@@ -19,8 +19,7 @@
 	}
 	list($firts_name) = explode(" ", $username);
 
-	//insertar datos
-$conexion = mysqli_connect($host, $user, $pass, $db);
+//insertar datos
 if ($conexion) {
 	//se verifica si el usuario exciste
 	$verify = mysqli_query($conexion, "select email from users WHERE email = '".$email."';");

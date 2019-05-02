@@ -8,4 +8,5 @@
 */
 	$user = "root";
 	$db   = "coldffee";
+	$conexion = mysqli_connect($host, $user, $pass, $db);
 ?>

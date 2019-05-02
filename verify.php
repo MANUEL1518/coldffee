@@ -16,7 +16,6 @@ ini_set('display_errors', '0');
 		include("med/datos_serv.php");
 		//recibo id de verificacion
 		$usuario = $_GET['id_alfa'];
-		$conexion = mysqli_connect($host, $user, $pass, $db);
 		//busqueda de usuarios en base de datos
 		$query = mysqli_query($conexion, "SELECT * FROM  no_verify WHERE id_alfanum ='".$usuario."';");
 

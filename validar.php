@@ -5,7 +5,6 @@ ini_set('display_errors', '0');
 if (isset($_POST['email']) && isset($_POST['pass'])) {
 	$email = $_POST['email'];
 	$password = $_POST['pass'];
-	$conexion = mysqli_connect($host, $user, $pass, $db);
 	if ($conexion) {
 		$query = mysqli_query($conexion, "SELECT * FROM users WHERE email = '".$email."';");
 		if (mysqli_num_rows($query) > 0) {
