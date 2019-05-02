@@ -1,0 +1,9 @@
+Lo que falta:
+
+	- Hacer organizacion principal de la subida y edicion de los archivos
+	- Hacer "accout" para modificar perfin
+
+	Nota:
+	° Que la foto de perfil sea subida aparte a otra carpeta
+
+	- Sistema de recuperacion de contraseña
