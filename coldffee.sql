@@ -48,5 +48,15 @@ CREATE TABLE `users` (
   `start_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+<<<<<<< HEAD
 LOCK TABLES `users` WRITE;
 UNLOCK TABLES;
+=======
+CREATE TABLE `files` (
+  `id_filex` varchar(20),
+  `id_user` varvchar(10),
+  `filename` varchar(255),
+  `ext` varchar(10),
+  `date_uploaded` TIMESTAMP DEFAULT CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+>>>>>>> 374564a58ddb8793518378f3e4f4c0ac15ec6ba5
