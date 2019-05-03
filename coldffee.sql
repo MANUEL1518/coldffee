@@ -1,5 +1,30 @@
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+DROP TABLE IF EXISTS `files`;
+CREATE TABLE `files` (
+  `id_file` varchar(25) DEFAULT NULL,
+  `id_user` varchar(10) DEFAULT NULL,
+  `filename` varchar(255) DEFAULT NULL,
+  `ext` varchar(10) DEFAULT NULL,
+  `date_upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `route` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+LOCK TABLES `files` WRITE;
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `folders`;
+
+CREATE TABLE `folders` (
+  `foldername` varchar(50) DEFAULT NULL,
+  `route` varchar(54) DEFAULT NULL,
+  `id_user` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+LOCK TABLES `folders` WRITE;
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `no_verify`;
 
 CREATE TABLE `no_verify` (
   `id_alfanum` varchar(10) DEFAULT NULL,
@@ -9,6 +34,12 @@ CREATE TABLE `no_verify` (
   `fecha_ini` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+LOCK TABLES `no_verify` WRITE;
+
+UNLOCK TABLES;
+
+DROP TABLE IF EXISTS `users`;
+
 CREATE TABLE `users` (
   `id` varchar(10) DEFAULT NULL,
   `username` varchar(40) DEFAULT NULL,
@@ -16,3 +47,6 @@ CREATE TABLE `users` (
   `password` varchar(255) DEFAULT NULL,
   `start_date` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOCK TABLES `users` WRITE;
+UNLOCK TABLES;
