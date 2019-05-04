@@ -5,6 +5,3 @@ Lo que falta:
 
 	Nota:
 	° Que la foto de perfil sea subida aparte a otra carpeta
-
-	- Sistema de recuperacion de contraseña
-	- Escribir nuevo archivo "coldffee.sql" con tabla files

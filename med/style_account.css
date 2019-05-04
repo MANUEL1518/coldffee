@@ -4,4 +4,45 @@
 }
 body{
 	font-family: Roboto;
+	background-image: url(texture_granos_de_cafe.jpg);
+	//background-color: rgba(0, 0, 0, 0.2);
+	background-blend-mode: soft-light;
+}
+#main{
+	width: 30%;
+	padding: 20px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	border-top: 5px #02c solid;
+	margin: 40px auto;
+}
+#main img{
+	border-radius: 50%;
+}
+#main h2{
+	padding: 10px 0px;
+	text-align: center;
+	border-bottom: 3px #000 solid;
+}
+#main h4{
+	padding: 5px 0px;
+	font-weight: normal;
+}
+#btn_imagen{
+	width: 170px;
+	height: 170px;
+	background: url(user_icon.png);
+	//background: rgba(255,255,255,0.5);
+	//background-image: url(camara.png);
+	background-position: center;
+	background-size: 100%;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-blend-mode: soft-light;
+}
+button{
+	width: 100%;
+	padding: 10px;
+	
 }
