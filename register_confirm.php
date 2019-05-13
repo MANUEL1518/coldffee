@@ -100,9 +100,9 @@ if (strlen($var) > 0) {
 		<section id="main" style="width: 700px;">
 			<center><h1>The Data Has Been Correctly Recorded</h1></center>
 			<p>Cool!!! <b><?php echo $firts_name;?></b> your data has already been registered.</p><br>
-			<p>We sent a confirmation email to <b><?php echo $_POST["email"];?>.</b> check your email to confirm your registration. <br><br> Tank You :)</p><br>
+			<p>We sent a confirmation email to <b><?php echo $_POST["email"];?>.</b> check your email to confirm your registration. <br><br> Thank You :)</p><br>
 			<p>
-				<b>Warning:</b> perhaps due to the messaging system, the confirmation email remains in the <b>*Spam*</b> tray in your Email. <b>remember to review.</b>
+				<b>Warning:</b> perhaps due to the messaging system, the confirmation email remains in the <b>*Spam*</b> tray in your Email. <b>remember to check.</b>
 			</p><br>
 			<a href="index.php"><button>Back to Home</button></a>
 		</section>
