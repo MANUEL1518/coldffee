@@ -133,6 +133,10 @@ if ($_SESSION['id_user'] != "" && $_SESSION['username'] != "" && $_SESSION['emai
 		<div id="con_blue">
 		</div>
 	</div>
+	<div id="content_main">
+		<!-- Aqui va el sistema de archivos -->
+		<?php content_main(); ?>
+	</div>
 </body>
 </html>
 <?php	

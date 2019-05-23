@@ -280,3 +280,24 @@ input[type="submit"]{
   color: #fff;
   border-radius: 50%;
 }
+
+#cont_main_home{
+  width: 100%;
+  background: #fff;
+}
+
+#cont_main_home table{
+  border-collapse: collapse;
+  width: 100%;
+  box-sizing: border-box;
+}
+#cont_main_home table td{
+  text-align: center;
+  padding: 10px;
+}
+#cont_main_home table td:nth-child(1){
+  width: 10%;
+}
+#cont_main_home table td:nth-child(2){
+  width: 50%;
+}
