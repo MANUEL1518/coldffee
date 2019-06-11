@@ -26,6 +26,11 @@ $(document).ready(function(){
 	    document.getElementById("uploaded").submit();
 	});
 });
+		function download_in_zip(){
+			if ($('input[name="files[]"]').is(':checked')) {
+				
+			}
+		}
 		function check_avery_files(){
 			if ($('#every_files').is(':checked')){
 				$('input[name="files[]"]').prop("checked", true);

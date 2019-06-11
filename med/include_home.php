@@ -12,11 +12,11 @@ function formatSizeUnits($bytes) // Redimencionar peso
         } 
         elseif ($bytes >= 1048576) 
         { 
-            $bytes = number_format($bytes / 1048576, 2) . ' MB'; 
+            $bytes = number_format($bytes / 1048576, 2) . ' MB';
         } 
         elseif ($bytes >= 1024) 
         { 
-            $bytes = number_format($bytes / 1024, 2) . ' KB'; 
+            $bytes = number_format($bytes / 1024, 2) . ' KB';
         } 
         elseif ($bytes > 1) 
         { 
@@ -109,13 +109,13 @@ function content_main(){
 				<input type="checkbox" onclick="check_avery_files();" id="every_files">
 			</td>
 			<td colspan="4">
-				<div id="btn_icon_event" title="Upload" onClick="uploaded_file();">
+				<div id="btn_icon_event" title="Upload" onclick="uploaded_file();">
 					<div class="icon_upload"></div>
 				</div>
-				<div id="btn_icon_event" title="Download">
+				<div id="btn_icon_event" title="Download" onclick="download_in_zip();">
 					<div class="icon_download"></div>
 				</div>
-				<div id="btn_icon_event" title="Delete" onClick="delete_files();">
+				<div id="btn_icon_event" title="Delete" onclick="delete_files();">
 					<div class="icon_delete"></div>
 				</div>
 			</td>
