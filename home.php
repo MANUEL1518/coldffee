@@ -2,9 +2,9 @@
 session_start();
 //ver si las variables de sesion estan vacias
 if ($_SESSION['id_user'] != "" && $_SESSION['username'] != "" && $_SESSION['email'] != ""){
-	include("med/include_home.php");
-	include("med/datos_serv.php");
 	$id_user = $_SESSION['id_user'];
+	include("med/datos_serv.php");
+	include("med/include_home.php");
 	if ($conexion) {
 		$peticion = mysqli_query($conexion, "SELECT * FROM users WHERE id = '".$id_user."'");
 		if ($peticion) {
@@ -33,52 +33,11 @@ if ($_SESSION['id_user'] != "" && $_SESSION['username'] != "" && $_SESSION['emai
 	<link rel="icon" type="image/png" href="med/coffee.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu|Pacifico|Varela+Round" rel="stylesheet">
-	<script type="text/javascript">
-		//Detectar si "file" se encuentra con elemento
-		$(document).ready(function(){
-			$("input[type=file]").change(function(){ //Si "foto_perfil" ya esta lleno entonces...
-				
-				$("#lightbox_change_fperfil").css("transition","0.5s");
-				$("#lightbox_change_fperfil").css("height","0%");
-				$("#lightbox_change_fperfil").css("opacity","0");
-				setTimeout(function(){
-					$("#lightbox_change_fperfil").css("display","none");
-				}, 1500);
-
-	            document.getElementById("foto_perfil").submit();
-	        });
-        });
-        function change_foto(){
-        	$("#lightbox_change_fperfil").css("transition","0.5s");
-        	$("#lightbox_change_fperfil").css("height","100%");
-			$("#lightbox_change_fperfil").css("opacity","1");
-			$("#lightbox_change_fperfil").css("display","flex");
-        }
-        function close_change_foto(){
-        	$("#lightbox_change_fperfil").css("transition","0.5s");
-			$("#lightbox_change_fperfil").css("height","0%");
-			$("#lightbox_change_fperfil").css("opacity","0");
-			setTimeout(function(){
-				$("#lightbox_change_fperfil").css("display","none");
-			}, 1500);
-        }
-		function setings() {
-			var setings = document.getElementById('setings');
-			setings.style.transition = "0.5s";
-			setings.style.padding = "20px";
-			setings.style.opacity = "1";
-			setings.style.width = "350px";
-		}
-		function close_settings(){
-			var setings = document.getElementById('setings');
-			setings.style.transition = "0.5s";
-			setings.style.padding = "0";
-			setings.style.opacity = "0";
-			setings.style.width = "0px";
-		}
-	</script>
+	<script src="med/home_script.js"></script>
 </head>
 <body>
+	<!-- Aqui esta el lightbox de change_foto -->
+
 	<div id="lightbox_change_fperfil" onClick="close_change_foto();">
 		<div id="main_change">
 			<div onClick="close_change_foto();" id="btn_changue_foto">✖</div>
@@ -86,13 +45,35 @@ if ($_SESSION['id_user'] != "" && $_SESSION['username'] != "" && $_SESSION['emai
 				<h1>Selecciona la imagen que usaras de perfil</h1><br><br>
 			<form id="foto_perfil" action="med/change_foto.php?usr=<?php echo $id_user; ?>" method="post" enctype="multipart/form-data">
 				<label id="file_form">
-					<input type="file" name="archivo" accept="image/png, image/jpeg" required>
+					<input type="file" name="archivo" id="input_foto" accept="image/png, image/jpeg" required>
 					Selecciona un archivo
 				</label>
 			</center>	
 			</form>
 		</div>
 	</div>
+
+	<!-- Aqui esta el lightbox de change_foto -->
+
+	<!-- Aqui esta el lightbox de subir archivos -->
+
+	<div id="lightbox_uploaded_file" onClick="close_uploaded_file();">
+	<div id="main_change">
+		<div onClick="close_uploaded_file();" id="btn_changue_foto">✖</div>
+		<center>
+		<h1>Selecciona los archivos que deseas subir</h1><br><br>
+		<form id="uploaded" action="#" method="post" enctype="multipart/form-data">
+			<label id="file_form">
+				<input type="file" name="archivo" id="input_files" required>
+				Selecciona un archivo
+			</label>
+		</center>	
+		</form>
+	</div>
+	</div>
+
+	<!-- End lightbox de subir archivos -->
+
 	<div id="setings">
 		<div onClick="close_settings();" id="btn_pop_down_up">✖</div>
 		<h1>Cuenta</h1>
@@ -115,11 +96,11 @@ if ($_SESSION['id_user'] != "" && $_SESSION['username'] != "" && $_SESSION['emai
 		<div id="con">
 			<span>
 				<p>Archivos Subidos</p><br>
-				<p>0</p>
+				<p><?php echo $num_files; ?></p>
 			</span>
 			<span>
 				<p>Peso Total</p><br>
-				<p>0</p>
+				<p><?php total_size(); ?></p>
 			</span>
 			<span>
 				<p>Favoritos</p><br>
@@ -135,7 +116,7 @@ if ($_SESSION['id_user'] != "" && $_SESSION['username'] != "" && $_SESSION['emai
 	</div>
 	<div id="content_main">
 		<!-- Aqui va el sistema de archivos -->
-		<?php content_main(); ?>
+		<?php content_main(); //Esto esta dentro de include_home.php ?>
 	</div>
 </body>
 </html>
