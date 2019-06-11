@@ -26,9 +26,11 @@ $(document).ready(function(){
 	    document.getElementById("uploaded").submit();
 	});
 });
+		// Descargar zip manda el action a zip_generator.php
 		function download_in_zip(){
 			if ($('input[name="files[]"]').is(':checked')) {
-				
+				$('#checkboxs_files').attr("action","med/zip_generator.php");
+				document.getElementById("checkboxs_files").submit();
 			}
 		}
 		function check_avery_files(){
@@ -42,6 +44,7 @@ $(document).ready(function(){
 		//Borrar archivos dentro de los checkbox
 		function delete_files(){
 			if ($('input[name="files[]"]').is(':checked')) {
+				//$('#checkboxs_files').attr("action","med/delete_files.php?id_user=" + id_user);
 				document.getElementById("checkboxs_files").submit();
 			}
 		}
